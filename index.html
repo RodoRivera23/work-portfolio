@@ -13,18 +13,20 @@
         <h1>Work Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+                <li><a href="https://www.linkedin.com/in/rodolfo-rivera-solis/">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="sample-img">Image</div>
+        <div class="head-img">
+            <img src="assets/images/FullStack_Web.jpg" alt="FullStack_Web_Image" />
+        </div>
         <div>
-            <section>
+            <section id="aboutMe">
                 <h2>About Me</h2>
                 <article>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -41,24 +43,32 @@
         </div>
 
         <div>
-            <section>
+            <section id="Work">
                 <h2>Work</h2>
-                <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.</p>
-                </article>
+                    <div class="image_row">
+                        <div class="image_column">
+                            <img class="img_bkgrd" src="assets/images/IoT_image.png" alt="Iot_Image" />
+                            <span class="item_desc">Internet of Things</span> 
+                        </div>
+                        <div class="image_column">
+                            <img class="img_bkgrd" src="assets/images/net_image.png" alt="net_Image" />
+                            <span class="item_desc">.Net Development</span> 
+                        </div>
+                    </div>
+                    <div class="image_row">
+                        <div class="image_column">
+                            <img class="img_bkgrd" src="assets/images/frontend_techs.png" alt="frontEnd_Image" />
+                            <span class="item_desc">Web Development</span> 
+                        </div>
+                        <div class="image_column">
+                            <img class="img_bkgrd" src="assets/images/IoT_image.png" alt="Iot_Image" />
+                        </div>
+                    </div>
             </section>
         </div>
 
         <div>
-            <section>
+            <section id="contactMe">
                 <h2>Contact Me</h2>
                 <article>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -74,10 +84,6 @@
             </section>
         </div>
 
-        <!-- <aside>
-            <h2>About Me</h2>
-        </aside>
-         -->
     </main>
 
     <footer>

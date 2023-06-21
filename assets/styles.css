@@ -30,12 +30,46 @@ nav a {
     text-decoration: none;
 }
 
-.sample-img {
+.head-img {
     background-color: #fff;
     width: 100%;
-    padding: 20px;
-    height: 200px;
+    height: 100%;
     border: 1px solid black;
+    display: flex;
+}
+
+.head-img img {
+    flex-shrink: 0%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.image_row{
+    display: flex;
+}
+
+.image_column{
+    padding: 0.75rem;
+    flex: 50%;
+}
+
+.image_column > img{
+    width: 100%;
+}
+
+.img_bkgrd{
+    filter: blur(2px);
+}
+
+.image_column > img:hover{
+    filter: blur(0px);
+}
+
+.item_desc{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
 }
 
 main {
@@ -51,16 +85,19 @@ section {
     border-right: #13293d;
 }
 
-section > h2{
+section>h2 {
     color: #fff;
 }
 
 article {
     flex: 3;
+    flex-direction: row;
     background-color: #fff;
-    padding: 20px;
+    padding: 4rem;
     text-align: justify;
+    display: inline-flex;
 }
+
 
 footer {
     display: flex;
@@ -69,12 +106,4 @@ footer {
     /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
     color: var(--light);
-}
-
-.aboutMe {
-    margin-top: 2rem;
-}
-
-.work {
-    margin-top: 2rem;
 }
