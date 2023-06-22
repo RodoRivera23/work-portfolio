@@ -16,6 +16,11 @@ header {
     color: var(--light);
 }
 
+header img {
+    width: 15%;
+    display: inline-block;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -31,6 +36,7 @@ nav a {
 }
 /*Styles for Header*/
 
+
 /*Styles for main image*/
 .head-img {
     background-color: #fff;
@@ -45,40 +51,6 @@ nav a {
     min-width: 100%;
     min-height: 100%;
 }
-/*Styles for main image*/
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.image-gallery a {
-    flex-basis: 50%;
-    padding: 0.5rem;
-    box-sizing: border-box;
-}
-
-.image-gallery img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.img_bkgrd {
-    opacity: 0.5;
-}
-
-.image-gallery img:hover {
-    opacity: 1.0;
-}
-
-.item_desc {
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    position: relative;
-}
-
 
 main {
     display: flex;
@@ -105,8 +77,50 @@ article {
     text-align: justify;
     display: inline-flex;
 }
+/*Styles for main image*/
 
 
+/*Styles for Work image*/
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container a {
+    padding: 0.3rem;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.container img:hover {
+    opacity: 1.0;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-row a {
+    width: 50%;
+    height: auto;
+}
+
+.image-row img:hover {
+    opacity: 1.0;
+}
+
+.img_bkgrd {
+    opacity: 0.2;
+}
+/*Styles for Work section*/
+
+
+/*Styles for Footer section*/
 footer {
     display: flex;
     align-items: center;
@@ -115,3 +129,24 @@ footer {
     background-color: var(--dark);
     color: var(--light);
 }
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 2rem;
+}
+
+.container li{
+    margin-left: 14rem;
+}
+
+a {
+    background-color: unset;
+    color: var(--navlink-color);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/*Styles for Footer section*/
