@@ -5,11 +5,26 @@
     --navlink-color: #b9c6ae;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: serif;
+    color: #fff;
+    font-size: 185%;
+}
+
 /*Styles for Header*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 1%;
     /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
@@ -18,22 +33,24 @@ header {
 
 header img {
     width: 15%;
-    display: inline-block;
+    display: flex;
 }
 
-nav ul {
+header nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 300px;
     list-style-type: none;
 }
 
-nav a {
+header nav a {
     background-color: unset;
     color: var(--navlink-color);
     font-weight: bold;
     text-decoration: none;
+    padding: 1rem;
 }
+
 /*Styles for Header*/
 
 
@@ -60,13 +77,9 @@ main {
 section {
     flex: 1;
     background-color: darkslategrey;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: left;
     border-right: #13293d;
-}
-
-section>h2 {
-    color: #fff;
 }
 
 article {
@@ -77,6 +90,12 @@ article {
     text-align: justify;
     display: inline-flex;
 }
+
+article p {
+    font-size: 135%;
+    font-family: 'Moncaco';
+}
+
 /*Styles for main image*/
 
 
@@ -117,31 +136,42 @@ article {
 .img_bkgrd {
     opacity: 0.2;
 }
+
 /*Styles for Work section*/
 
 
 /*Styles for Footer section*/
 footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 0.5rem;
     /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
     color: var(--light);
 }
 
-ul{
+footer h2 {
+    padding-left: 0.5rem;
+}
+
+footer div {
+    display: inline-block;
+}
+
+footer ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
-    margin-left: 2rem;
+    padding-left: 0;
 }
 
-.container li{
-    margin-left: 14rem;
+footer li {
+    margin-right: 1rem;
 }
 
-a {
+footer a {
+    display: flex;
     background-color: unset;
     color: var(--navlink-color);
     font-weight: bold;
@@ -149,4 +179,28 @@ a {
 
 }
 
+.list-wrapper {
+    flex: 0 0 57%;
+}
+
 /*Styles for Footer section*/
+
+@media screen and (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer li {
+        flex: 0 0 10%;
+    }
+
+}
